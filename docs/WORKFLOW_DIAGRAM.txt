@@ -1,0 +1,37 @@
+WOMEN SAFETY DEVICE WORKFLOW
+
+[POWER ON]
+    |
+    v
+[INITIALIZE ARDUINO / PERIPHERALS]
+    |
+    v
+[FINGERPRINT AUTHENTICATION]
+    |---- NOT AUTHORIZED ----> [RETRY / LOCKED STATE]
+    |
+  AUTHORIZED
+    |
+    v
+[ACTIVATE SAFETY MONITORING]
+    |
+    v
+[ACQUIRE GPS LOCATION]
+    |
+    v
+[PERIODIC SAFETY CHECK]
+    |
+    +---- NORMAL ----> [CONTINUE MONITORING]
+    |
+    +---- SAFETY CONDITION ---->
+              |
+              v
+       [SEND GSM SMS ALERT]
+              |
+              v
+       [INCLUDE LOCATION]
+              |
+              v
+         [BUZZER ALERT]
+              |
+              v
+        [LCD / LED STATUS]
